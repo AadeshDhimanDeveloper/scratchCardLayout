@@ -1,6 +1,6 @@
 package dev.skymansandy.scratchcardlayoutexample.util
 
-import dev.skymansandy.scratchcardviewexample.R
+import com.aadevelopers.scratchcardview.R
 import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent

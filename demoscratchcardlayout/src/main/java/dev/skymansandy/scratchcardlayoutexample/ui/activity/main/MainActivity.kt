@@ -5,8 +5,6 @@ import dev.skymansandy.scratchcardlayoutexample.ui.fragment.demoscreen.DemoFragm
 import dev.skymansandy.scratchcardlayoutexample.ui.fragment.webpagescreen.WebPageContent
 import dev.skymansandy.scratchcardlayoutexample.ui.fragment.webpagescreen.WebPageFragment
 import dev.skymansandy.scratchcardlayoutexample.util.AppUtils
-import dev.skymansandy.scratchcardviewexample.R
-import dev.skymansandy.scratchcardviewexample.databinding.ActivityMainBinding
 import android.os.Bundle
 import android.os.Handler
 import android.view.MenuItem
@@ -14,6 +12,8 @@ import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.GravityCompat
 import androidx.fragment.app.Fragment
+import com.aadevelopers.scratchcardview.R
+import com.aadevelopers.scratchcardview.databinding.ActivityMainBinding
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {

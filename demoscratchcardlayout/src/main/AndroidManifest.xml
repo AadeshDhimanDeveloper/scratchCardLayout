@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="dev.skymansandy.scratchcardviewexample">
+    xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -17,7 +16,8 @@
         <activity
             android:name="dev.skymansandy.scratchcardlayoutexample.ui.activity.main.MainActivity"
             android:screenOrientation="portrait"
-            android:label="@string/library_app_name">
+            android:label="@string/library_app_name"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

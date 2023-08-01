@@ -4,8 +4,6 @@ import dev.skymansandy.scratchcardlayout.listener.ScratchListener
 import dev.skymansandy.scratchcardlayout.ui.ScratchCardLayout
 import dev.skymansandy.scratchcardlayout.util.ScratchCardUtils
 import dev.skymansandy.scratchcardlayoutexample.util.AppUtils
-import dev.skymansandy.scratchcardviewexample.R
-import dev.skymansandy.scratchcardviewexample.databinding.FragmentDemoBinding
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -15,6 +13,8 @@ import android.widget.CompoundButton
 import android.widget.SeekBar
 import android.widget.SeekBar.OnSeekBarChangeListener
 import androidx.fragment.app.DialogFragment
+import com.aadevelopers.scratchcardview.R
+import com.aadevelopers.scratchcardview.databinding.FragmentDemoBinding
 
 class DemoFragment : DialogFragment(), ScratchListener {
 

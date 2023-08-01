@@ -1,7 +1,7 @@
 package dev.skymansandy.scratchcardlayoutexample.ui.fragment.webpagescreen
 
 import dev.skymansandy.scratchcardlayoutexample.util.AppConstants.URLs
-import dev.skymansandy.scratchcardviewexample.databinding.FragmentWebpageBinding
+import com.aadevelopers.scratchcardview.databinding.FragmentWebpageBinding
 import android.annotation.SuppressLint
 import android.graphics.Bitmap
 import android.os.Bundle
@@ -37,7 +37,7 @@ class WebPageFragment : DialogFragment() {
         }
     }
 
-    private val mWebClient: WebViewClient? = object : WebViewClient() {
+    private val mWebClient: WebViewClient = object : WebViewClient() {
         override fun onPageStarted(view: WebView?, url: String?, favicon: Bitmap?) {
             super.onPageStarted(view, url, favicon)
             if (!isAdded) return
@@ -65,10 +65,26 @@ class WebPageFragment : DialogFragment() {
                 val content = bundle.getSerializable(CONTENT_TYPE) as? WebPageContent
                         ?: WebPageContent.PAGE_VIEW_IN_GITHUB
                 when (content) {
-                    WebPageContent.PAGE_VIEW_ABOUT_LIBRARY -> binding.webView.loadUrl(URLs.VIEW_READ_ME)
-                    WebPageContent.PAGE_VIEW_IN_GITHUB -> binding.webView.loadUrl(URLs.GITHUB_REPO_URL)
-                    WebPageContent.PAGE_ISSUE_AND_FEEDBACK -> binding.webView.loadUrl(URLs.ISSUE_FEEDBACK_URL)
-                    WebPageContent.PAGE_DONATE_BEER -> binding.webView.loadUrl(URLs.DONATE_BEER_URL)
+                    WebPageContent.PAGE_VIEW_ABOUT_LIBRARY -> URLs.VIEW_READ_ME?.let {
+                        binding.webView.loadUrl(
+                            it
+                        )
+                    }
+                    WebPageContent.PAGE_VIEW_IN_GITHUB -> URLs.GITHUB_REPO_URL?.let {
+                        binding.webView.loadUrl(
+                            it
+                        )
+                    }
+                    WebPageContent.PAGE_ISSUE_AND_FEEDBACK -> URLs.ISSUE_FEEDBACK_URL?.let {
+                        binding.webView.loadUrl(
+                            it
+                        )
+                    }
+                    WebPageContent.PAGE_DONATE_BEER -> URLs.DONATE_BEER_URL?.let {
+                        binding.webView.loadUrl(
+                            it
+                        )
+                    }
                 }
             }
         }

@@ -1,11 +1,11 @@
 package dev.skymansandy.scratchcardlayoutexample.ui.fragment.aboutdev
 
-import dev.skymansandy.scratchcardviewexample.databinding.FragmentAboutDevBinding
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
+import com.aadevelopers.scratchcardview.databinding.FragmentAboutDevBinding
 
 class AboutDevFragment : DialogFragment() {
 
