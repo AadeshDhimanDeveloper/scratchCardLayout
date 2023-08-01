@@ -14,7 +14,7 @@
         tools:ignore="GoogleAppIndexingWarning">
 
         <activity
-            android:name="dev.skymansandy.scratchcardlayoutexample.ui.activity.main.MainActivity"
+            android:name="com.github.scratchcardlayoutexample.ui.activity.main.MainActivity"
             android:screenOrientation="portrait"
             android:label="@string/library_app_name"
             android:exported="true">

@@ -32,13 +32,13 @@
  
  ```
  dependencies {
-      implementation 'in.codeshuffle.scratchcardlayout:ScratchCardLayout:1.0.8'
+      implementation 'com.github.AadeshDhimanDeveloper:scratchCardLayout:1.0.0'
  }
  ```
  
  ## XML Usage
  ```xml
-  <in.codeshuffle.scratchcardview.ui.ScratchCardLayout
+  <com.github.aadeshdhimandeveloper.ui.ScratchCardLayout
          android:id="@+id/scratchCard"
          android:layout_width="250dp"
          android:layout_height="250dp"
@@ -49,7 +49,7 @@
          app:scratchRevealFullAtPercent="100">
  
          <!--Your complex view here-->
-  </in.codeshuffle.scratchcardview.ui.ScratchCardLayout>     
+  </com.github.aadeshdhimandeveloper.ui.ScratchCardLayout>     
  ```
  
  ## Java Usage
